@@ -21,6 +21,7 @@ def selection_sort(values):
 def bubble_sort(values):
     print(values)
     values = values.copy()
+    #swapped = False
     plt.ion()
     plt.show()
 
@@ -36,7 +37,10 @@ def bubble_sort(values):
             plt.title("Bubble Sort")
             plt.pause(0.1)
             if values[j] > values[j+1]:
+                # swapped = True
                 values[j], values[j+1]= values[j+1], values[j]
+        #if not swapped:
+            #return values
 
     plt.ioff()
     plt.show()
